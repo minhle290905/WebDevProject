@@ -5,6 +5,12 @@ body{
     padding: 10px;
 }
 
+body, div {
+    background-repeat: no-repeat; 
+    background-attachment:fixed; 
+    background-size: cover;
+}
+
 header, div, nav{
     border-radius: 10px;    /* For rounded corners */
 }
@@ -33,15 +39,15 @@ div, nav {
 
 div {
     background-color: rgb(255, 250, 245);
-    border: 4px solid black;
+    border: 4px solid rgb(0, 49, 81);
 }
 
 nav {
     border: 2px double #333333;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 202, 123);
     width: fit-content;
 }
 a {
-    color: darkblue;       
+    color: white;       
     text-decoration: none;
 }
