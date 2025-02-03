@@ -2,30 +2,46 @@
 body{
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    padding: 10px;
 }
 
-header, div{
+header, div, nav{
     border-radius: 10px;    /* For rounded corners */
 }
 header {
     background-color: #333333;
     color: white;
     font-size: 200%;
-    text-align: center;
-    padding: 1em;           /* Add space above and below the title */
+    padding: 5px;           /* Add space above and below the title */
 }
 
-h1 {
+header, h1 , h3{
     text-align: center;
+}
+
+h3 {
+    color: rgb(0, 0, 62);
+    font-size: 18px;
+}
+
+div, nav {
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
 }
 
 div {
-    background-color: white;
-    border: 2px solid #cccccc;
-    padding: 1em;           /* Add space around each div */
+    background-color: rgb(255, 250, 245);
+    border: 4px solid black;
 }
 
+nav {
+    border: 2px double #333333;
+    background-color: blanchedalmond;
+    width: fit-content;
+}
 a {
-    color: #333333;       
-    text-decoration: none;  /* Remove links' underline */
+    color: darkblue;       
+    text-decoration: none;
 }
