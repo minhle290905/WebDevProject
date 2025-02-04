@@ -1,3 +1,4 @@
+/* Jason's Work */
 h2 {
     color: rgb(31, 165, 249);
     font-size: 20px;
@@ -10,6 +11,10 @@ h3 {
     text-align: center;
 }
 
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
 a {
     color: darkblue;
     text-decoration: underline;

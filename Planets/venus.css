@@ -1,3 +1,4 @@
+/* Jason's Work*/
 h2 {
     color: rgb(196, 160, 0);
     font-size: 20px;
@@ -8,6 +9,11 @@ h3 {
     color: rebeccapurple;
     font-size: 18px;
     text-align: center;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
