@@ -31,7 +31,7 @@ h3 {
 }
 
 div, nav {
-    margin-top: 6px;
+    margin-top: 7px;
     margin-left: auto;
     margin-right: auto;
     padding: 2em;
@@ -50,4 +50,13 @@ nav {
 a {
     color: white;       
     text-decoration: none;
+}
+
+.planets:hover h2, .planets:hover p {
+    color:aqua;
+    transition: .3s;
+}
+
+.planets:active h2, .planets:active p {
+    color: darkblue;
 }
