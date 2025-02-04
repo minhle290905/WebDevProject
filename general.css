@@ -1,4 +1,6 @@
 /* Jason's Work */
+
+/* Body Elements */
 body{
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -11,14 +13,15 @@ body, div {
     background-size: cover;
 }
 
+/* Headings/Headers Elements */
 header, div, nav{
-    border-radius: 10px;    /* For rounded corners */
+    border-radius: 10px; 
 }
 header {
     background-color: #333333;
     color: white;
     font-size: 200%;
-    padding: 5px;           /* Add space above and below the title */
+    padding: 5px;
 }
 
 header, h1 , h3{
@@ -30,6 +33,7 @@ h3 {
     font-size: 18px;
 }
 
+/* Mainly Div & Nav Elements */
 div, nav {
     margin-top: 7px;
     margin-left: auto;
@@ -44,12 +48,22 @@ div {
 
 nav {
     border: 2px double #333333;
-    background-color: rgb(255, 202, 123);
+    background-color: rgb(255, 190, 92);
     width: fit-content;
 }
+
+/* Links Elements */
 a {
     color: white;       
     text-decoration: none;
+}
+a:hover {
+    color:orangered;
+    transition: .3s;
+}
+
+a:active {
+    color: purple;
 }
 
 .planets:hover h2, .planets:hover p {
