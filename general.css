@@ -81,3 +81,18 @@ a:active {
 .planets:active h2, .planets:active p {
     color: darkblue;
 }
+
+/* Nav List Format */
+.navigate {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.navigate li a {
+    text-align: center;
+    padding-left: 3px;
+}
