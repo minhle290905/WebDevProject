@@ -46,6 +46,13 @@ div {
     border: 4px solid rgb(0, 49, 81);
 }
 
+div.right {
+    background-position: right;
+}
+
+div.left{
+    text-align: right;
+}
 nav {
     border: 2px double #333333;
     background-color: rgb(255, 190, 92);
