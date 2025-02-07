@@ -1,5 +1,8 @@
 /* Jason's Work */
 
+* { /* Added border box for easier CSS layout */
+    box-sizing: border-box;
+}
 /* Body Elements */
 body{
     font-family: Arial, sans-serif;
