@@ -30,6 +30,25 @@ h3 {
 }
 
 /* Images */
+.atmosphere, .noAtmosphere {
+    width: 80%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    border: 2px solid rgb(180, 117, 0);
+    text-align: center;
+}
+
+.atmosphere {
+    background-image: url(../images/VenusAtmosphere.png);
+}
+
+.noAtmosphere {
+    background-image: url(../images/VenusNoAtmosphere.png);
+}
+
 .gallery {
     display: flex;
     justify-content: center;
