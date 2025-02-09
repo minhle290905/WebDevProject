@@ -9,7 +9,7 @@ body{
     margin: 0;
 }
 
-body, div {
+body, div, article {
     background-repeat: no-repeat; 
     background-attachment:fixed; 
     background-size: cover;
@@ -65,18 +65,18 @@ nav.bottom {
 
 /* Articles Related Elements*/
 article {
-    background-color: rgb(251, 244, 146);
-    border: 4px solid darkkhaki;
+    border: 4px solid rgb(0, 49, 81);
     margin-top: 7px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 2em;
     border-radius: 10px; 
     text-align: center;
+    background-image: url(https://papers.co/wallpaper/papers.co-ng79-star-sky-night-space-dark-blue-36-3840x2400-4k-wallpaper.jpg)
 }
 
 article h2, article p {
-    color: rgb(120, 114, 32);
+    color: rgb(249, 218, 142);
 }
 
 article p {
@@ -87,6 +87,7 @@ article p {
 iframe {
     border: 5px solid darkgoldenrod;
     border-radius: 10px;
+    margin-bottom: 0;
 }
 
 /* Links Elements */
