@@ -34,7 +34,7 @@ img {
     margin-right: auto;
 }
 
-.gallery {
+.gallery, img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
