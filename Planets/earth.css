@@ -1,4 +1,21 @@
 /* Jason's Work */
+
+/* Main Body */
+body {
+    background-image: url(https://i0.wp.com/astronomicca.com/wp-content/uploads/2022/01/Cassiopeia.jpg?resize=1200%2C1200&ssl=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div {
+    border: 4px solid rgb(0, 111, 6);
+}
+
+/* Headings & Headers*/
+header {
+    background-color: rgb(3, 151, 205);
+}
 h2 {
     color: rgb(31, 165, 249);
     font-size: 20px;
@@ -11,10 +28,12 @@ h3 {
     text-align: center;
 }
 
+/* Images */
 img {
     margin-left: auto;
     margin-right: auto;
 }
+/* Links */
 a {
     color: darkblue;
     text-decoration: underline;

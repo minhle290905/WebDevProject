@@ -11,6 +11,10 @@ body {
     background-attachment: fixed;
 }
 
+div {
+    border: 4px solid rgb(180, 117, 0);
+}
+
 /* Headings & Headers*/
 header {
     background-color: rgb(180, 117, 0);
@@ -70,17 +74,6 @@ a {
     text-decoration: underline;
 }
 
-.mainLink {
-    color: white;    
-}
-
-.mainLink:hover {
-    color: cyan;    
-}
-
-.mainLink:active {
-    color: darkblue;    
-}
 
 /* Mobile phones */
 @media only screen and (max-width: 650px) {

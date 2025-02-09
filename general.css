@@ -104,6 +104,18 @@ a:active {
     color: purple;
 }
 
+.mainLink {
+    color: white;    
+}
+
+.mainLink:hover {
+    color: cyan;    
+}
+
+.mainLink:active {
+    color: darkblue;    
+}
+
 .planets:hover h2, .planets:hover p {
     color:aqua;
     transition: .3s;
