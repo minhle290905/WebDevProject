@@ -139,3 +139,7 @@ a:active {
     text-align: center;
     padding-left: 3px;
 }
+
+#welcomeGreeting{
+    text-align: center;
+}
