@@ -44,7 +44,7 @@ div, nav {
 }
 
 div {
-    background-color: rgb(255, 250, 245);
+    background-color: rgba(255, 250, 245, 0.96);
     border: 4px solid rgb(0, 49, 81);
 }
 
@@ -70,10 +70,10 @@ nav.bottom {
 }
 
 div.specialText {
-    background-color:unset;
+    /* Undo some CSS properties */
+    background-color: unset;
     border: unset;
     display: flex;
-    color: white;
     padding: 5em;
 }
 
@@ -87,7 +87,7 @@ div.specialText {
 .specialText p {
     flex: 1;
     padding: 1em;
-    color: orange;
+    color: rgb(255, 190, 92);
     background-color: rgba(0, 0, 0, 0.5);
     margin-left: 10px;
 }
