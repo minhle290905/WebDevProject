@@ -58,6 +58,8 @@ div.left{
 nav.bottom {
     border: 2px double #333333;
     background-color: rgb(255, 190, 92);
+    background-position: bottom;
+    background-repeat: no-repeat;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
