@@ -97,7 +97,7 @@ div.specialText {
     padding: 1em;
     color: rgb(255, 190, 92);
     background-color: rgba(0, 0, 0, 0.5);
-    margin-left: 10px;
+    margin-left: 1em;
 }
 /* Articles Related Elements*/
 article {
