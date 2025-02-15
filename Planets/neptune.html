@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div {
+    border: 4px solid rgb(0, 0, 111);
+}
+
+/* Headings & Headers*/
+header {
+	color: white;
+    background-color: rgb(3, 31, 205);
+    text-align:center;
+}
+h2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+p, ul {
+	color:white;
+}
+
+/* Images */
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery, img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    flex: 1;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+    width: 33%;
+    border-radius: 10px;
+}
+
+/* Links */
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 650px) {
+    div {
+        padding: 0.5em;
+    }
+    .gallery img {
+      width: 100%;
+      flex-direction: column;
+    }
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    
+
+</head>
+<body>
+    <!--Website Main Title-->
+    <header>
+        <h1>Neptune</h1>
+    </header>
+    
+    <!--Main Content-->
+    <div>
+        <h2>Overview</h2>
+        <p>
+            Neptune is the 8<sup>th</sup> and farthest planet from the Sun in our Solar System. It is a gas giant, known 
+            for its deep blue color and extreme winds, the fastest recorded in the Solar System.
+        </p>
+    </div>
+    
+    <div>
+        <h2>Key Facts</h2>
+        <ul>
+            <li><strong>Distance from Sun:</strong> 4.5 billion km</li>
+            <li><strong>Orbital Period:</strong> 164.8 years</li>
+            <li><strong>Rotation Period:</strong> 16 hours</li>
+            <li><strong>Diameter:</strong> 49,244 km</li>
+            <li><strong>Moons:</strong> 14 (Largest: Triton)</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h2>Fun Facts</h2>
+        <ul>
+            <li>Neptune was the first planet discovered using mathematical predictions.</li>
+            <li>It has the strongest winds in the Solar System, reaching speeds of 2,100 km/h.</li>
+            <li>Neptune's largest moon, Triton, orbits the planet in the opposite direction of its rotation.</li>
+            <li>It appears blue due to methane in its atmosphere, which absorbs red light.</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h2>Neptune's Storms</h2>
+        <p>Neptune is home to massive storms, including the famous Great Dark Spot, which was observed by Voyager 2.
+            <br><br>
+            This planet's atmosphere is in constant motion, creating turbulent weather patterns.
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Neptune%27s_Great_Dark_Spot.jpg/450px-Neptune%27s_Great_Dark_Spot.jpg" 
+            alt="Neptune's Great Dark Spot"
+            style="width: 50%; height: auto; text-align: center;">
+        <p style="margin-top: 0; margin-bottom: 0; font-size: 75%; text-align: center;"> 
+            Neptune's Great Dark Spot
+        </p>
+    </div>
+
+    <div>
+        <h2>Gallery</h2>
+        <section class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptune Full View">
+            <img src="https://i.gifer.com/origin/d5/d59fde1db496905deebd623faacac41b_w200.webp" alt="Neptune Storm Animation">
+            <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL25lcHR1bmUtdXBkYXRlNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ==" alt="Neptune Orbiting the Sun">
+           
+        </section>
+        <p style="text-align: right; color: white; font-size: 75%; margin-bottom: 0; margin-top: 0;">
+            &uArr; A glimpse of Neptune's mysteries!
+        </p>
+    </div>
+    
+    <nav class="bottom">
+        <h3>To Other Planets!</h3> 
+        <ul class="navigate">
+            <li><a href="/Planets/mercury.html"> <h style="color:rgb(211,211,211)">Mercury</h></a> |</li>
+            <li><a href="/Planets/venus.html"> <h style="color:rgb(255,174,66)">Venus</h></a> |</li>
+            <li><a href="/Planets/earth.html"><h style="color:green">Earth</h></a> |</li>
+            <li><a href="/Planets/mars.html"><h style="color:rgb(255,69,0)">Mars</h></a> |</li>
+            <li><a href="/Planets/jupiter.html"><h style="color:rgb(177,96,2)">Jupiter</h></a> |</li>
+            <li><a href="/Planets/saturn.html"><h style="color:rgb(196,164,132)">Saturn</h></a> |</li>
+            <li><a href="/Planets/uranus.html"><h style="color:lightblue">Uranus</h></a> |</li>
+            <li>&nbsp;Neptune&nbsp;</li>
+        </ul>
+    </nav>
+    <a class="mainLink" href="../index.html">
+        <h1 style="color:white;">Back to Main</h1>
+    </a>
+</body>
+</html>
