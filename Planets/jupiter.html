@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div {
+    border: 4px solid rgb(111, 78, 55);
+}
+
+/* Headings & Headers*/
+header {
+    color: white;
+    background-color: rgb(205, 102, 31);
+    text-align: center;
+}
+h2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+p, ul {
+    color: white;
+}
+
+/* Images */
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery, img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    flex: 1;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+    width: 33%;
+    border-radius: 10px;
+}
+
+/* Links */
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 650px) {
+    div {
+        padding: 0.5em;
+    }
+    .gallery img {
+      width: 100%;
+      flex-direction: column;
+    }
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter</title>
+</head>
+<body>
+    <!--Website Main Title-->
+    <header>
+        <h1>Jupiter</h1>
+    </header>
+    
+    <!--Main Content-->
+    <div>
+        <h2>Overview</h2>
+        <p>
+            Jupiter is the 5<sup>th</sup> planet from the Sun and the largest in our Solar System. It is a gas giant
+            known for its Great Red Spot, a massive storm system that has lasted for centuries.
+        </p>
+    </div>
+    
+    <div>
+        <h2>Key Facts</h2>
+        <ul>
+            <li><strong>Distance from Sun:</strong> 778 million km</li>
+            <li><strong>Orbital Period:</strong> 11.86 years</li>
+            <li><strong>Rotation Period:</strong> 10 hours</li>
+            <li><strong>Diameter:</strong> 139,820 km</li>
+            <li><strong>Moons:</strong> 95+ (Largest: Ganymede)</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h2>Fun Facts</h2>
+        <ul>
+            <li>Jupiter is so massive that it influences the orbits of other planets.</li>
+            <li>Its Great Red Spot is a storm larger than Earth.</li>
+            <li>Jupiter has a faint ring system, discovered by Voyager 1 in 1979.</li>
+            <li>It has the strongest magnetic field of any planet in the Solar System.</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h2>Jupiter's Great Red Spot</h2>
+        <p>Jupiter’s Great Red Spot is a giant storm that has been observed for over 300 years.
+        </p>
+        <img src="https://assets.newatlas.com/dims4/default/a361dad/2147483647/strip/true/crop/1000x667+0+118/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fjupiter-water-1.jpg" 
+            alt="Jupiter's Great Red Spot"
+            style="width: 50%; height: auto; text-align: center;">
+        <p style="margin-top: 0; margin-bottom: 0; font-size: 75%; text-align: center;"> 
+            Jupiter's massive storm system
+        </p>
+    </div>
+
+    <div>
+        <h2>Gallery</h2>
+        <section class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter Full View">
+            <img src="https://th-thumbnailer.cdn-si-edu.com/Dfk2XYBC4PSP3q2bkk4yXTdKzF4=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/4a/c2/4ac2276a-a3cb-4458-bd73-fbd3c646b32d/35491828673_faa9d0f5c2_k.jpg" alt="Jupiter and its Red Spot">
+            <img src="https://payload.cargocollective.com/1/12/410267/6000553/jupiter__1__speedyspacebike.jpg" alt="Jupiter from Voyager 1">
+        </section>
+        <p style="text-align: right; color: white; font-size: 75%; margin-bottom: 0; margin-top: 0;">
+            &uArr; A closer look at Jupiter's mysteries!
+        </p>
+    </div>
+    
+    <nav class="bottom">
+        <h3>To Other Planets!</h3> 
+        <ul class="navigate">
+            <li><a href="/Planets/mercury.html"> <h style="color:rgb(211,211,211)">Mercury</h></a> |</li>
+            <li><a href="/Planets/venus.html"> <h style="color:rgb(255,174,66)">Venus</h></a> |</li>
+            <li><a href="/Planets/earth.html"><h style="color:green">Earth</h></a> |</li>
+            <li><a href="/Planets/mars.html"><h style="color:rgb(255,69,0)">Mars</h></a> |</li>
+            <li>&nbsp;Jupiter&nbsp;</li>
+            <li><a href="/Planets/saturn.html"><h style="color:rgb(196,164,132)">Saturn</h></a> |</li>
+            <li><a href="/Planets/uranus.html"><h style="color:lightblue">Uranus</h></a> |</li>
+            <li><a href="/Planets/neptune.html"><h style="color:blue">Neptune</h></a> |</li>
+        </ul>
+    </nav>
+    <a class="mainLink" href="../index.html">
+        <h1 style="color:white;">Back to Main</h1>
+    </a>
+</body>
+</html>
