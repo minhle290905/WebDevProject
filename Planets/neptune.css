@@ -9,12 +9,12 @@ body {
 }
 
 div {
-    border: 4px solid rgb(0, 111, 6);
+    border: 4px solid blue;
 }
 
 /* Headings & Headers*/
 header {
-    background-color: rgb(3, 151, 205);
+    background-color: blue;
 }
 h2 {
     color: rgb(31, 165, 249);
@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-    color: green;
+    color: blue;
     font-size: 18px;
     text-align: center;
 }
