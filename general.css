@@ -7,14 +7,15 @@
 body{
     font-family: Arial, sans-serif;
     margin: 0;
+    width: fit-content;
 }
 
 body, div, article {
     background-repeat: no-repeat; 
     background-attachment:fixed; 
     background-size: cover;
+    
 }
-
 
 /* Headings/Headers Elements */
 header {
@@ -123,6 +124,10 @@ iframe {
     border: 5px solid darkgoldenrod;
     border-radius: 10px;
     margin-bottom: 0;
+    min-height: 50vh;
+    height: 30vw;
+    max-width:  ;
+    min-width: 80vw;
 }
 
 /* Links Elements */
