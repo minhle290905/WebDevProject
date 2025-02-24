@@ -22,22 +22,13 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    color: green;
-    font-size: 18px;
-    text-align: center;
-}
-
 /* Images */
-img {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .gallery, img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery img {

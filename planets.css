@@ -1,14 +1,8 @@
 /* Jason's Work*/
 
 /* Main Body */
-* {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 body {
     background-image: url(https://i0.wp.com/astronomicca.com/wp-content/uploads/2022/01/Cassiopeia.jpg?resize=1200%2C1200&ssl=1);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 /* Headings & Headers*/
@@ -26,6 +20,11 @@ h3 {
 }
 
 /* Images */
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .gallery {
     display: flex;
     justify-content: center;
