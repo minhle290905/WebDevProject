@@ -190,9 +190,29 @@ a:active {
     padding-left: 3px;
 }
 
+/* Footer */
+footer {
+    background-color: #333333;
+    border-radius: 10px;
+    color: rgb(200, 200, 200);
+    padding: 2rem;
+    display: flex;
+}
+
+footer div {
+    all: unset;
+    color: rgb(200, 200, 200);
+}
+
+footer h3 {
+    color: rgb(200, 200, 200);
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 /* Mobile phones */
 @media only screen and (max-width: 650px) {
-    .specialText {
+    .specialText, footer {
       flex-direction: column;
     }
 }
