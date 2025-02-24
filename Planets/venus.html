@@ -9,7 +9,30 @@
     <!--Links to stylesheet and icon-->
     <link rel="icon" type="images/icon" href="../images/Venus.png">
     <link rel="stylesheet" href="../general.css">
-    <link rel="stylesheet" href="venus.css">
+    <link rel="stylesheet" href="../planets.css">
+
+    <!-- Webpage styling -->
+    <style>
+        div {border: 4px solid rgba(180, 117, 0, 0.714);}
+        header {background-color: rgb(180, 117, 0);}
+        h2 {color: rgb(196, 160, 0);}
+
+        /* Images */
+        .atmosphere, .noAtmosphere {
+            width: 80%;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: auto;
+            border: 2px solid rgb(180, 117, 0);
+            text-align: center;
+        }
+        .atmosphere {background-image: url(../images/VenusAtmosphere.png);}
+        .noAtmosphere {background-image: url(../images/VenusNoAtmosphere.png);}
+
+
+    </style>
 </head>
 <body>
     <!--Website Main Title-->
@@ -72,7 +95,9 @@
     </div>
     
     <nav class="bottom">
-        <h3>To Other Planets!</h3>
+        <a class="mainLink" href="../index.html">
+            <h1>To Other Planets!</h1>
+        </a>
         <ul class="navigate">
             <li><a href="/Planets/mercury.html"> Mercury</a> |</li>
             <li>&nbsp;Venus&nbsp;|</li>
@@ -84,8 +109,5 @@
             <li><a href="/Planets/neptune.html">Neptune</a></li>
         </ul>
     </nav>
-    <a class="mainLink" href="../index.html">
-        <h1>Back to Main</h1>
-    </a>
 </body>
 </html>

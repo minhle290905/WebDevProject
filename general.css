@@ -134,12 +134,26 @@ iframe {
 }
 
 /* Links Elements */
-a {
-    color: white;       
+.planets {
+    color: white;      
     text-decoration: none;
 }
-a:hover {
-    color:orangered;
+
+.planets:hover h2, .planets:hover p {
+    color:aqua;
+    transition: .3s;
+}
+
+.planets:active h2, .planets:active p {
+    color: darkblue;
+}
+
+a { /* Intented for the bottom navigation link */
+    color: darkblue;
+}
+
+a:hover { 
+    color:white;
     transition: .3s;
 }
 
@@ -157,15 +171,6 @@ a:active {
 
 .mainLink:active {
     color: darkblue;    
-}
-
-.planets:hover h2, .planets:hover p {
-    color:aqua;
-    transition: .3s;
-}
-
-.planets:active h2, .planets:active p {
-    color: darkblue;
 }
 
 /* Nav List Format */
