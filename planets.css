@@ -20,6 +20,11 @@ h3 {
 }
 
 /* Images */
+
+img {
+    border-radius: 10px;
+}
+
 .gallery, img {
     display: flex;
     justify-content: center;
@@ -34,7 +39,7 @@ h3 {
     margin: auto;
     padding: 5px;
     width: 33%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 /* Links */
