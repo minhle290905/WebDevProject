@@ -1,20 +1,25 @@
 /* Jason's Work */
 
-* { /* Added border box for easier CSS layout */
+* {
+    /* Added border box for easier CSS layout */
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
 /* Body Elements */
-body{
+body {
     margin: 0;
     width: fit-content;
     background: #333333 url(/images/NightSky.png);
 }
 
-body, div, article, footer {
-    background-repeat: no-repeat; 
-    background-attachment:fixed; 
+body,
+div,
+article,
+footer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -28,11 +33,14 @@ header {
     width: 100%;
 }
 
-header, h1 , h3{
+header,
+h1,
+h3 {
     text-align: center;
 }
 
-#index { /* for Header too */
+#index {
+    /* for Header too */
     background: darkcyan url(https://png.pngtree.com/thumb_back/fh260/background/20240430/pngtree-orange-light-background-image_15722879.jpg);
     background-position: cover;
     background-repeat: no-repeat;
@@ -45,12 +53,13 @@ h3 {
 }
 
 /* Mainly Div & Nav Elements */
-div, nav {
+div,
+nav {
     margin-top: 7px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 2em;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 div {
@@ -62,13 +71,15 @@ div.right {
     background-position: right;
 }
 
-div.left{
+div.left {
     text-align: right;
 }
 
 /* For floating images & text boxes */
-.specialText, .specialText p, .specialText img {
-    border-radius: 10px; 
+.specialText,
+.specialText p,
+.specialText img {
+    border-radius: 10px;
     margin: auto;
 }
 
@@ -94,6 +105,7 @@ div.specialText {
     background-color: rgba(0, 0, 0, 0.5);
     margin-left: 1em;
 }
+
 /* Articles Related Elements*/
 article {
     border: 4px solid rgb(0, 49, 81);
@@ -101,12 +113,13 @@ article {
     margin-left: 20px;
     margin-right: 20px;
     padding: 2em;
-    border-radius: 10px; 
+    border-radius: 10px;
     text-align: center;
     background-image: url(https://papers.co/wallpaper/papers.co-ng79-star-sky-night-space-dark-blue-36-3840x2400-4k-wallpaper.jpg)
 }
 
-article h2, article p {
+article h2,
+article p {
     color: rgb(249, 218, 142);
 }
 
@@ -126,16 +139,18 @@ iframe {
 
 /* Links Elements */
 .planets {
-    color: white;      
+    color: white;
     text-decoration: none;
 }
 
-.planets:hover h2, .planets:hover p {
-    color:aqua;
+.planets:hover h2,
+.planets:hover p {
+    color: aqua;
     transition: .3s;
 }
 
-.planets:active h2, .planets:active p {
+.planets:active h2,
+.planets:active p {
     color: darkblue;
 }
 
@@ -150,13 +165,13 @@ nav.bottom {
 }
 
 /* Navigation link */
-.navigate a { 
+.navigate a {
     color: darkblue;
     transition: .3s;
 }
 
-.navigate a:hover { 
-    color:white;
+.navigate a:hover {
+    color: white;
 }
 
 .navigate a:active {
@@ -165,15 +180,15 @@ nav.bottom {
 
 /* "To Other Planets" Link */
 .mainLink {
-    color: white;    
+    color: white;
 }
 
 .mainLink:hover {
-    color: cyan;    
+    color: cyan;
 }
 
 .mainLink:active {
-    color: darkblue;    
+    color: darkblue;
 }
 
 /* Nav List Format */
@@ -211,7 +226,7 @@ footer {
 }
 
 
-.Footer:hover{
+.Footer:hover {
     color: white;
     transition: 0.5s;
 }
@@ -220,13 +235,14 @@ footer {
     flex: 1.5;
 }
 
-.Sources, .Contact {
+.Sources,
+.Contact {
     flex: 1;
 }
 
 /* Footer Links */
-.Footer a { 
-    color:rgb(231, 231, 231);
+.Footer a {
+    color: rgb(231, 231, 231);
     transition: .5s;
 }
 
@@ -240,7 +256,9 @@ footer {
 
 /* Mobile phones */
 @media only screen and (max-width: 650px) {
-    .specialText, footer {
-      flex-direction: column;
+
+    .specialText,
+    footer {
+        flex-direction: column;
     }
 }

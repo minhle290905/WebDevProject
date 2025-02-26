@@ -1,6 +1,18 @@
 /* Jason's Work*/
 
 /* Main Body */
+
+/*Planet Headers CSS disigns*/
+.marsHeader {
+    background-color: rgba(245, 77, 26, 0.7)
+}
+
+
+
+
+
+
+
 body {
     background-image: url(https://i0.wp.com/astronomicca.com/wp-content/uploads/2022/01/Cassiopeia.jpg?resize=1200%2C1200&ssl=1);
 }
@@ -25,7 +37,8 @@ img {
     border-radius: 10px;
 }
 
-.gallery, img {
+.gallery,
+img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -54,8 +67,9 @@ a {
     div {
         padding: 0.5em;
     }
+
     .gallery img {
-      width: 100%;
-      flex-direction: column;
+        width: 100%;
+        flex-direction: column;
     }
 }
