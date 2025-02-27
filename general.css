@@ -214,6 +214,7 @@ footer {
     border-radius: 10px 10px 0 0;
     border: 4px solid gray;
     margin-top: 1rem;
+    width: 100vw;
 }
 
 .Footer {
