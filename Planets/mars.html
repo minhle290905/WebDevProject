@@ -1,14 +1,139 @@
 <!--Edilson-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Mars</title>
+
     <!--Sytle sheets and icon links-->
     <link rel="icon" type="images/icon" href="../images/Mars.png">
-    
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="../planets.css">
+
+    <!--Mars Style body-->
+    <style>
+        .marsHeader {
+            background-color: rgba(245, 77, 26, 0.7)
+        }
+
+        div {
+            border: 4px solid rgb(231, 166, 0);
+
+        }
+        .marsSunset,.earthSunset{
+            width: 80%;
+            height: 23dvh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: auto;
+            border: 2px solid rgb(180, 117, 0);
+            text-align: center;       
+        }
+        .earthSunset{
+            background-image: url(/images/earth_sunset.jpg);
+        }
+        .marsSunset{
+            background-image: url(/images/mars_sunset.jpg);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!--Website Main Title-->
+    <header class="marsHeader">
+        <h1>Mars</h1>
+    </header>
+
+    <!--Main Content-->
+    <div>
+        <h2>Overview</h2>
+        <p>
+            Mars is the 4<sup>th</sup> planet from the Sun and the 2<sup>nd</sup>smallest planet in the Solar System
+            after Mercury.
+            Often called the “<b>Red Planet</b>”, its reddish appearance comes from iron oxide (rust) on its surface.
+        </p>
+    </div>
+
+    <div>
+        <h2>Key Facts</h2>
+        <ul>
+            <li><strong>Diameter:</strong> ~6,779 km (about half the size of earth)</li>
+            <li><strong>Gravity:</strong> ~38% of Earth's gravity</li>
+            <li><strong>Atmosphere:</strong> This and mostly carbon dioxide (CO<sub>2</sub>)</li>
+            <li><strong>Moons:</strong> Phobos & Deimos </li>
+            <li><strong>Temperature:</strong> Extremely Cold, Ranging from -140&#8451 to 30&#8451 (-220&#8457 to
+                86&#8457)</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Fun Facts</h2>
+        <ul>
+            <li>Mars has the Tallest Volcano in the solar System</li>
+            <ul>
+                <li>Olympus Mons is a massive volcano, about three times the height of Mount Everest! It is around 22 km
+                    (13.6 miles) tall and 600 km (373 miles) wide—so big it could cover the entire state of Arizona.
+                </li>
+            </ul>
+            <li>Mars has the Biggest Canyon in the Solar System</li>
+            <ul>
+                <li>Valles Marineris is a giant canyon system that stretches over 4,000 km (2,500 miles)—that&apos;s
+                    about
+                    the width of the United States! It&apos;s 10 times longer and 4 times deeper than the Grand Canyon.
+                </li>
+            </ul>
+            <li>Mars has "Blue Sunsets"</li>
+            <ul>
+                <li>Unlike Earth&apos;s red and orange sunsets, Mars has blue sunsets due to the way its thin atmosphere
+                    scatters sunlight. The dusty air absorbs red light and lets blue light pass through, creating an
+                    eerie cool-toned glow at dusk.</li>
+            </ul>
+            <li>Your weight on Mars would be much less</li>
+            <ul>
+                <li>Mars&apos; gravity is only 38% of Earth&apos;s, so if you weigh 100 lbs (45 kg) on Earth, you&apos;d
+                    weigh just 38
+                    lbs (17 kg) on Mars! Time to hit those high jumps!</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Mars Blue Sunset</h2>
+        <div class="earthSunset"></div>
+        <div class="marsSunset"></div>
+
+    </div>
+
+    <div>
+        <h2>Gallery</h2>
+        <section class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Spinning_Mars.gif" alt="Mars Spinning">
+            <img src="https://cdn.britannica.com/74/21174-050-01630AAB/volcano-Olympus-Mons-Mars-base-mosaic-spacecraft.jpg"
+                alt="Olympus Mons">
+            <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/v/VallesMarineris_withUSAoutline_UPDATED_5000x5000.jpg"
+                alt="Mars Canyon">
+            <img src="https://spaceplace.nasa.gov/review/planets-weight/planets-weight3.en.png" alt="Weight on Mars">
+            <img src="https://pbs.twimg.com/media/F92qUXnXoAAlUtI.jpg:large" alt="Mars Moons Size Coomarison">
+        </section>
+    </div>
+
+    <nav class="bottom">
+        <a class="mainLink" href="../index.html">
+            <h1>To Other Planets!</h1>
+        </a>
+        <ul class="navigate">
+            <li><a href="/Planets/mercury.html"> Mercury</a> |</li>
+            <li><a href="/Planets/venus.html"> Venus</a> |</li>
+            <li>&nbsp;Earth&nbsp;|</li>
+            <li><a href="/Planets/mars.html">Mars</a> |</li>
+            <li><a href="/Planets/jupiter.html">Jupiter</a> |</li>
+            <li><a href="/Planets/saturn.html">Saturn</a> |</li>
+            <li><a href="/Planets/uranus.html">Uranus</a> |</li>
+            <li><a href="/Planets/neptune.html">Neptune</a></li>
+        </ul>
+    </nav>
 </body>
+
 </html>
