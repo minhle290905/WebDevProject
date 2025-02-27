@@ -13,6 +13,12 @@
 
     <!--Mars Style body-->
     <style>
+        h2{
+            font-size: 2vh;
+        }
+        body{
+            width: 100%;
+        }
         .marsHeader {
             background-color: rgba(245, 77, 26, 0.7)
         }
@@ -21,7 +27,9 @@
             border: 4px solid rgb(231, 166, 0);
 
         }
-        .marsSunset,.earthSunset{
+
+        .marsSunset,
+        .earthSunset {
             width: 80%;
             height: 23dvh;
             background-size: cover;
@@ -29,16 +37,30 @@
             background-position: center;
             margin: auto;
             border: 2px solid rgb(180, 117, 0);
-            text-align: center;       
+            text-align: center;
         }
 
         /* By the way, the old files still exist */
-        .earthSunset{
+        .earthSunset {
             background-image: url(/images/earth_sunset.png);
         }
-        .marsSunset{
+
+        .marsSunset {
             background-image: url(/images/mars_sunset.png);
         }
+
+        img {
+            display: grid;
+            grid-column: span;
+            width: auto;
+            height: 30vw;
+        }
+
+        .MarsMoon{
+            width: 10vh;
+            height: 40vw;
+        }
+
     </style>
 </head>
 
@@ -111,13 +133,13 @@
     <div>
         <h2>Gallery</h2>
         <section class="gallery">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Spinning_Mars.gif" alt="Mars Spinning">
             <img src="https://cdn.britannica.com/74/21174-050-01630AAB/volcano-Olympus-Mons-Mars-base-mosaic-spacecraft.jpg"
                 alt="Olympus Mons">
             <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/v/VallesMarineris_withUSAoutline_UPDATED_5000x5000.jpg"
                 alt="Mars Canyon">
             <img src="https://spaceplace.nasa.gov/review/planets-weight/planets-weight3.en.png" alt="Weight on Mars">
-            <img src="https://pbs.twimg.com/media/F92qUXnXoAAlUtI.jpg:large" alt="Mars Moons Size Coomarison">
+            <img class="MarsMoon" src="https://lh5.googleusercontent.com/proxy/k5TzdGOuQ_AdxxCLTvKiKHGfm3zKNu5W0rNms4lYebK4de_CxLX8id4E9NPAgQTQN2cQdNRjNxI6_GxrwnASku7pV2NT5y4_wYvsaks_ze1CN5_NkD8"
+                alt="Mars Moons Size Coomarison">
         </section>
     </div>
 
