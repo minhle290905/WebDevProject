@@ -30,7 +30,6 @@ img {
 .gallery,
 img {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
@@ -52,6 +51,18 @@ a {
     text-decoration: underline;
 }
 
+/* Basic flex structure */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.flex > * {
+    flex: 1;
+    margin: auto;
+    align-items: center;
+}
 
 /* Mobile phones */
 @media only screen and (max-width: 650px) {
@@ -59,7 +70,7 @@ a {
         padding: 0.5em;
     }
 
-    .gallery img {
+    .gallery img, .flex {
         width: 100%;
         flex-direction: column;
     }
