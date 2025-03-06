@@ -14,14 +14,15 @@
     <!-- Webpage styling -->
     <style>
         /* Colour theme */
-        div {border: 4px solid rgba(180, 117, 0, 0.714);}
+        body > div {border: 4px solid rgba(180, 117, 0, 0.714);}
         header {background-color: rgb(180, 117, 0);}
         h2 {color: rgb(196, 160, 0);}
+        p > a:hover {color: rgb(0, 141, 141); font-size: 110%;}
 
         /* Specific Venus Images */
         .atmosphere, .noAtmosphere {
             width: 80%;
-            height: 200px;
+            height: 300px;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -48,17 +49,21 @@
             making it the hottest planet in the Solar System. Venus rotates in the opposite direction to most planets in the 
             Solar System, a phenomenon known as retrograde rotation.
         </p>
+        <img src="https://sm.mashable.com/t/mashable_in/photo/default/shutterstock-163793456_mh4f.1248.jpg" alt="Earth and Venus" style="width: 100%; max-width: 700px;">
     </div>
     
     <div>
         <h2>Key Facts</h2>
-        <ul>
-            <li><strong>Distance from Sun:</strong> ~108.2 million km </li>
-            <li><strong>Orbital Period:</strong> 225 Earth days</li>
-            <li><strong>Rotation Period:</strong> 243 Earth days</li>
-            <li><strong>Diameter:</strong> 12,104 km</li>
-            <li><strong>Moons:</strong> 0 (It's lonely!)</li>
-        </ul>
+        <div class="flex">
+            <img src="https://www.cias.space/assets/images/solarsystemgif.gif" alt="Rocky Planets' Orbits" style="width: 50vw">
+            <ul>
+                <li><strong>Distance from Sun:</strong> ~108.2 million km </li>
+                <li><strong>Orbital Period:</strong> 225 Earth days</li>
+                <li><strong>Rotation Period:</strong> 243 Earth days</li>
+                <li><strong>Diameter:</strong> 12,104 km</li>
+                <li><strong>Moons:</strong> 0 (It's lonely!)</li>
+            </ul>
+        </div>
     </div>
     
     <div>
@@ -72,16 +77,45 @@
     </div>
     
     <div>
+        <h2>Venus Orbit</h2>
+            <p style="margin: 1rem;">
+                Almost all planets in the Solar System rotate counterclockwise on their axes and orbit the Sun in the same direction. 
+                Venus also follows a counterclockwise orbit but rotates clockwise on its axis. One theory for this unusual rotation 
+                suggests that a massive collision early in its history caused it to tilt and reverse its spin. The only other planet 
+                with a clockwise rotation is <a href="/Planets/uranus.html"><b>Uranus</b></a>, which is tilted almost completely on its side. Interesting, huh?
+            </p>
+            <img src="https://www.rmg.co.uk/sites/default/files/styles/max_2600x2600/public/Venus%20Phase%20Evolution%20%C2%A9%20Roger%20Hutchinson%20Winner.jpg?itok=bWKe-AuO" 
+            alt="Venus Phases" style="width: 100%; max-width: 700px;">    
+    </div>
+
+    <div>
         <h2>Venus Surfaces</h2>
-        <p>Did you know that since Venus is covered in a dense layer of carbon dioxide and sulfur clouds - so much so that it is 
+        <p>
+            Did you know that since Venus is covered in a dense layer of carbon dioxide and sulfur clouds - so much so that it is 
             reflexive to visible light, making it the brightest object in the sky after the Sun and the Moon?
             The actual Venus surface is rocky, mountainous, and orange due to the presence of iron oxide.
         </p>
         <h2>Venus With & Without the Atmosphere</h2>
-        <div class="atmosphere">
-        </div>
-        <div class="noAtmosphere">
-        </div>
+        <div class="atmosphere"></div>
+        <div class="noAtmosphere"></div>
+    </div>
+
+    <div style="text-align: center;">
+        <h2>From A Planet with Water To the Hottest!</h2>
+        <p>
+            Based on several observations on Venus, scientists noticed some unique characteristics that could bear the resemblance of life! 
+            There is a theory that Venus <em>may</em> have contained shallow ocean water on its surface hundreds of millions of years ago! Odd isn't it?
+        </p>
+        <!-- Provided by Youtube Embedded Sharing -->
+        <iframe style="width: 80%; min-height: 30vh;"
+        src="https://www.youtube.com/embed/BvXa1n9fjow" 
+        title="Venus 101 | National Geographic"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>Something Went Wrong 😞 Sorry!</iframe>
+        <p style="margin-top: 0; font-size: 75%;">
+            &copy; Video by National Geographic 2018
+        </p>
     </div>
 
     <div>
@@ -90,7 +124,12 @@
             <img src="../images/Venus.png" alt="Happy Venus Art">
             <img src="https://www.thoughtco.com/thmb/zx71j6FP0qwIkZCweRriG4tHaww=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1024px-Venus_globe-5a88ae823de423003738f750.jpg" alt="Venus Seen From Telescope">
             <img src="../images/Venus.gif" alt="Venus Spinning Art">
+            <img src="https://nssdc.gsfc.nasa.gov/planetary/image/venusglobe.gif" alt="Colored Venus Topology">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/0*8qrZOc7nRCew_1rW" alt="Venus Surface" style="flex: 2">
         </section>
+        <p style="text-align: right; color: rgb(205, 128, 3); font-size: 75%; margin-bottom: 0; margin-top: 0;">
+            &uArr; Look! It's Venus surface from a spacecraft!
+        </p>
     </div>
     
     <nav class="bottom">

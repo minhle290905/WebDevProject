@@ -49,6 +49,7 @@ img {
 a {
     color: darkblue;
     text-decoration: underline;
+    transition: .3s;
 }
 
 /* Basic flex structure */
