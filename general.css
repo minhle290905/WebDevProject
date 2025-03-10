@@ -152,6 +152,9 @@ iframe {
     color: darkblue;
 }
 
+.planets:hover h2 {font-size: 160%;}
+.planets:hover p {font-size: 110%;}
+
 nav.bottom {
     border: 4px double #e1a900;
     background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20240430/pngtree-orange-light-background-image_15722879.jpg);
@@ -170,6 +173,7 @@ nav.bottom {
 
 .navigate a:hover {
     color: white;
+    font-size: 110%;
 }
 
 .navigate a:active {
@@ -183,6 +187,7 @@ nav.bottom {
 
 .mainLink:hover {
     color: cyan;
+    font-size: 110%;
 }
 
 .mainLink:active {
@@ -202,6 +207,7 @@ nav.bottom {
 .navigate li a {
     text-align: center;
     padding-left: 3px;
+    transition: .3s;
 }
 
 /* Footer */
@@ -227,6 +233,7 @@ footer {
 
 .Footer:hover {
     color: white;
+    font-size: 110%;
     transition: 0.5s;
 }
 
@@ -260,6 +267,7 @@ footer {
     transition: .3s;
     margin-left: 1rem;
     margin-right: 8px;
+    border-radius: 10px;
 }
 
 .Footer img:hover {
