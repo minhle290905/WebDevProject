@@ -139,10 +139,16 @@ iframe {
     text-decoration: none;
 }
 
+.planets h2,
+.planets p {
+    transition: .3s;
+    text-decoration: none;
+
+}
+
 .planets:hover h2,
 .planets:hover p {
     color: aqua;
-    transition: .3s;
 }
 
 .planets:active h2,
