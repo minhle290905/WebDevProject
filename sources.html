@@ -13,19 +13,23 @@
     <!-- Webpage styling -->
     <style>
         /* Colour theme */
-        div {border: 4px solid rgb(183, 125, 0);}
+        body > div {border: 4px solid rgb(183, 125, 0);}
         h2 {color: rgb(225, 148, 15); text-align: center;} 
         strong {line-height: 2rem;}
-        #space {margin-bottom: 3rem;}
-        div ul {list-style-type: none;}
-        footer ul {list-style-type: square;}
-        ol {
-            list-style-position: inside;
-            list-style-type: upper-roman;
-        }
-        #videos li, #news li, #space li {
-            text-indent: -3rem;
-            line-height: 20px;
+        dd {text-indent:-1rem;}
+
+        @media screen and (max-width: 830px) {
+            .Contact > div > a {flex-direction: column;}
+            .Solar {flex: 1;}
+            .Footer {
+                margin: 0 auto; 
+                padding: .5rem 2rem; 
+                text-align: center;
+            }
+            article {
+                margin: 7px 0;
+                padding: 1rem;
+            }
         }
     </style>    
 </head>
@@ -38,199 +42,185 @@
     <!--Main Content-->
     <div>
         <h2 id="websites">Websites</h2>
-        <ol>
-            
+        <dl>
             <!-- Solar System General -->
-            <li><strong>Solar System</strong>
-                <ul>
-                    <li>  
-                        NASA. “Solar System Exploration - NASA Science.” <i>Science.nasa.gov</i>, 2024, 
-                        <a href="https://www.science.nasa.gov/solar-system/" target="_blank">www.science.nasa.gov/solar-system/</a>. <br> <br>
-                    </li>
-                    <li>  
-                        Worth, Josh. “If the Moon Were Only 1 Pixel - a Tediously Accurate Map of the Solar System.” <i>Joshworth.com</i>, Mar. 2014, 
-                        <a href="https://www.joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank">www.joshworth.com/dev/pixelspace/pixelspace_solarsystem.html</a>.<br> <br>
-                    </li>
-                </ul>
-            </li>
+            <dt><strong>Solar System</strong></dt>
+            <dd> 
+                NASA. “Solar System Exploration - NASA Science.” <i>Science.nasa.gov</i>, 2024, 
+                <a href="https://www.science.nasa.gov/solar-system/" target="_blank">www.science.nasa.gov<wbr>/solar-system/</a>. <br> <br>
+            </dd>
+            <dd>
+                Worth, Josh. “If the Moon Were Only 1 Pixel - a Tediously Accurate Map of the Solar System.” <i>Joshworth.com</i>, Mar 2014, 
+                <a href="https://www.joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank">www.joshworth.com/dev<wbr>/pixelspace/pixelspace_<wbr>solarsystem.html</a>.<br> <br>
+            </dd>
 
             <!-- Mercury -->
-            <li><b>Need Mercury Source(s)</b> <br> <br></li>
+            <dt><b>Need Mercury Source(s)</b> <br> <br></dt>
 
-            <li><strong>Venus</strong>
-                <ul>
-                    <li>
-                        Britannica. “Venus - the Atmosphere.” <i>Encyclopedia Britannica</i>, 3 June 2024, 
-                        <a href="https://www.britannica.com/place/Venus-planet/The-atmosphere" target="_blank"> www.britannica.com/place/Venus-planet/The-atmosphere</a>. <br> <br>
-                    </li>
-                    <li>
-                        NASA. “Venus - NASA Science.” <i>Science.nasa.gov</i>, NASA, 2023, 
-                        <a href="https://science.nasa.gov/venus/" target="_blank">science.nasa.gov/venus/</a>. <br> <br>
-                    </li>
-                    <li>
-                        Royal Museums Greenwich. “Interesting Facts about Venus.” <i>www.rmg.co.uk</i>,
-                        <a href="https://www.rmg.co.uk/stories/topics/interesting-facts-about-venus" target="_blank">
-                            www.rmg.co.uk/stories/topics/interesting-facts-about-venus</a>. <br> <br>
-                    </li>
-                    <li>
-                        Wikipedia. “Venus”, <i>Wikimedia Foundation</i>, 28 Feb. 2025, 
-                        <a href="https://en.wikipedia.org/wiki/Venus" target="_blank">en.wikipedia.org/wiki/Venus</a>. <br> <br>
-                    </li>
-                </ul>
-            </li>
+            <dt><strong>Venus</strong></dt>
+                <dd>
+                    Britannica. “Venus - the Atmosphere.” <i>Encyclopedia Britannica</i>, 3 June 2024, 
+                    <a href="https://www.britannica.com/place/Venus-planet/The-atmosphere" target="_blank"> www.britannica.com/place/<wbr>Venus-planet/The-atmosphere</a>. <br> <br>
+                </dd>
+                <dd>
+                    NASA. “Venus - NASA Science.” <i>Science.nasa.gov</i>, NASA, 2023, 
+                    <a href="https://science.nasa.gov/venus/" target="_blank">science.nasa.gov/venus/</a>. <br> <br>
+                </dd>
+                <dd>
+                    Royal Museums Greenwich. “Interesting Facts about Venus.” <i>www.rmg.co.uk</i>,
+                    <a href="https://www.rmg.co.uk/stories/topics/interesting-facts-about-venus" target="_blank">
+                        www.rmg.co.uk/stories<wbr>/topics/interesting-<wbr>facts-about-venus</a>. <br> <br>
+                </dd>
+                <dd>
+                    Wikipedia. “Venus”, <i>Wikimedia Foundation</i>, 28 Feb 2025, 
+                    <a href="https://en.wikipedia.org/wiki/Venus" target="_blank">en.wikipedia.org<wbr>/wiki/Venus</a>. <br> <br>
+                </dd>
+            </dt>
             
             <!-- Earth -->
-            <li><strong>Earth</strong>
-                <ul>
-                    <li>
-                        “Earth :: A Global Map of Wind, Weather, and Ocean Conditions.” <i>Earth.nullschool.net</i>, 
-                        <a href="https://earth.nullschool.net">earth.nullschool.net</a>. <br> <br>
-                    </li>
-                    <li>  
-                        “Earth Night 2025 | 19. September | Eine Ganze Nacht Licht Aus.” <i>Earth-Night.info</i>, 29 Jan. 2025, 
-                        <a href="https://www.earth-night.info/en/." target="_blank">www.earth-night.info/en/.</a> Accessed 2 Mar. 2025. <br> <br>
-                    </li>
-                    <li>  
-                        Jeanloz, Raymond. “Earth | Development, Information, Composition, & Facts.” <i>Encyclopædia Britannica</i>, 2019, 
-                        <a href="https://www.britannica.com/place/Earth" target="_blank">www.britannica.com/place/Earth</a>. <br> <br>
-                    </li>
-                    <li>
-                        NASA. “Earth - NASA Science.” <i>Science.nasa.gov</i>, 2024, <a href="https://science.nasa.gov/earth/">science.nasa.gov/earth/</a>. <br> <br>
-                    </li>
-                    <li>
-                        Wikipedia Contributors. “Earth.” Wikipedia, <i>Wikimedia Foundation</i>, 29 Apr. 2019, 
-                        <a href="https://en.wikipedia.org/wiki/Earth">en.wikipedia.org/wiki/Earth</a>. <br> <br>
-                    </li>
-                </ul>
-            </li>
+            <dt><strong>Earth</strong></dt>
+                <dd>
+                    “Earth :: A Global Map of Wind, Weather, and Ocean Conditions.” <i>Earth.ndllschool.net</i>, 
+                    <a href="https://earth.ndllschool.net">earth.ndlls<wbr>chool.net</a>. <br> <br>
+                </dd>
+                <dd>  
+                    “Earth Night 2025 | 19. September | Eine Ganze Nacht ddcht Aus.” <i>Earth-Night.info</i>, 29 Jan 2025, 
+                    <a href="https://www.earth-night.info/en/." target="_blank">www.earth-night<wbr>.info/en/.</a> Accessed 2 Mar. 2025. <br> <br>
+                </dd>
+                <dd>  
+                    Jeanloz, Raymond. “Earth | Development, Information, Composition, & Facts.” <i>Encyclopædia Britannica</i>, 2019, 
+                    <a href="https://www.britannica.com/place/Earth" target="_blank">www.britannica.com<wbr>/place/Earth</a>. <br> <br>
+                </dd>
+                <dd>
+                    NASA. “Earth - NASA Science.” <i>Science.nasa.gov</i>, 2024, <a href="https://science.nasa.gov/earth/">science.nasa.gov/earth/</a>. <br> <br>
+                </dd>
+                <dd>
+                    Wikipedia Contributors. “Earth.” Wikipedia, <i>Wikimedia Foundation</i>, 29 Apr 2019, 
+                    <a href="https://en.wikipedia.org/wiki/Earth">en.wikipedia.org<wbr>/wiki/Earth</a>. <br> <br>
+                </dd>
+            </dd>
 
             <!-- Mars -->
-            <li><b>Need Mars Source(s)</b> <br> <br></li>
+            <dt><b>Need Mars Source(s)</b> <br> <br></dt>
 
             <!-- Jupiter -->
-            <li><b>Need Jupiter Source(s)</b> <br> <br></li>
+            <dt><b>Need Jupiter Source(s)</b> <br> <br></dt>
             
             <!-- Saturn -->
-            <li><b>Need Saturn Source(s)</b> <br> <br></li>
+            <dt><b>Need Saturn Source(s)</b> <br> <br></dt>
 
             <!-- Uranus -->
-            <li><b>Need Uranus Source(s)</b> <br> <br></li>
+            <dt><b>Need Uranus Source(s)</b> <br> <br></dt>
 
             <!-- Neptune -->
-            <li><b>Need Neptune Source(s)</b> <br> <br></li>
-        </ol>
+            <dt><b>Need Neptune Source(s)</b> <br> <br></dt>
     </div>
     
 
     <!-- Sources to ALL videos here -->
     <div>
         <h2 id="videos">Videos</h2>
-        <ul>
-            <li>
+        <dl>
+            <dd>
                 CGP Grey. “Is Pluto a Planet?” <i>YouTube</i>, 29 May 2012, <a href="https://www.youtube.com/watch?v=Z_2gbGXzFbs&list=PLqs5ohhass_ROHZ67gHSni0bhtte9P4nR&index=" target="_blank">
-                www.youtube.com/watch?v=Z_2gbGXzFbs&list=PLqs5ohhass_ROHZ67gHSni0bhtte9P4nR&index=</a>2. Accessed 3 Mar. 2025. <br> <br>
-            </li>
-            <li>CGP Grey. “🌍 Which Planet Is the Closest?” <i>YouTube</i>, 30 Oct. 2019, 
+                www.youtube.com/watch<wbr>?v=Z_2gbGXzFbs&list=<wbr>PLqs5ohhass_ROHZ67gH<wbr>Sni0bhtte9P4nR&index=</a>2. Accessed 3 Mar 2025. <br> <br>
+            </dd>
+            <dd>CGP Grey. “🌍 Which Planet Is the Closest?” <i>YouTube</i>, 30 Oct. 2019, 
                 <a href="https://www.youtube.com/watch?v=SumDHcnCRuU&list=PLqs5ohhass_ROHZ67gHSni0bhtte9P4nR" target="_blank">
-                    www.youtube.com/watch?v=SumDHcnCRuU&list=PLqs5ohhass_ROHZ67gHSni0bhtte9P4nR
+                    www.youtube.com/watch<wbr>?v=SumDHcnCRuU<wbr>&list=PLqs5ohhass_<wbr>ROHZ67gHSni0bhtte9P4nR
                 </a>. Accessed 3 Mar. 2025. <br> <br> 
-            </li>
-            <li>
-                Kurzgesagt – In a Nutshell. “Everything You Need to Know about Planet Earth.” <i>YouTube</i>, 4 Aug. 2014, 
+            </dd>
+            <dd>
+                Kurzgesagt – In a Nutshell. “Everything You Need to Know about Planet Earth.” <i>YouTube</i>, 4 Aug 2014, 
                 <a href="https://www.youtube.com/watch?v=JGXi_9A__Vc&list=PLlKADClY7ZgZ9MdvYB7jurMeD8hUdI2Ja&index=11" target="_blank">
-                    www.youtube.com/watch?v=JGXi_9A__Vc&list=PLlKADClY7ZgZ9MdvYB7jurMeD8hUdI2Ja&index=11
+                    www.youtube.com/watch<wbr>?v=JGXi_9A__Vc&list<wbr>=PLlKADClY7ZgZ9MdvYB<wbr>7jurMeD8hUdI2Ja&index=11
                 </a>. Accessed 3 Mar. 2025. <br> <br>
-            </li>
-            <li>
-                Kurzgesagt – In a Nutshell. “The Solar System -- Our Home in Space.” <i>YouTube</i>, 22 Aug. 2013, 
+            </dd>
+            <dd>
+                Kurzgesagt – In a Nutshell. “The Solar System -- Our Home in Space.” <i>YouTube</i>, 22 Aug 2013, 
                 <a href="https://www.youtube.com/watch?v=KsF_hdjWJjo&list=PLlKADClY7ZgZ9MdvYB7jurMeD8hUdI2Ja&index=12" target="_blank">
-                    www.youtube.com/watch?v=KsF_hdjWJjo&list=PLlKADClY7ZgZ9MdvYB7jurMeD8hUdI2Ja&index=12
+                    www.youtube.com/watch<wbr>?v=KsF_hdjWJjo&list<wbr>=PLlKADClY7ZgZ9MdvYB7<wbr>jurMeD8hUdI2Ja&index=12
                 </a>. Accessed 3 Mar. 2025. <br> <br>
-            </li>
+            </dd>
 
-            <li>
-                National Geographic. “Venus 101 | National Geographic.” YouTube, 26 Oct. 2018, 
-                <a href="https://www.youtube.com/watch?v=BvXa1n9fjow">www.youtube.com/watch?v=BvXa1n9fjow</a>. <br> <br>
-            </li>
-            <li>
-                Rober, Mark. “DRONE Solar System Model- How Far Is Planet 9?” <i>YouTube</i>, YouTube Video, 9 Mar. 2016, 
-                <a href="https://www.youtube.com/watch?v=pR5VJo5ifdE" target="_blank">www.youtube.com/watch?v=pR5VJo5ifdE</a>. Accessed 22 Jan. 2020. <br> <br>
-            </li>
-        </ul>
+            <dd>
+                National Geographic. “Venus 101 | National Geographic.” YouTube, 26 Oct 2018, 
+                <a href="https://www.youtube.com/watch?v=BvXa1n9fjow">www.youtube.com/watch<wbr>?v=BvXa1n9fjow</a>. <br> <br>
+            </dd>
+            <dd>
+                Rober, Mark. “DRONE Solar System Model- How Far Is Planet 9?” <i>YouTube</i>, YouTube Video, 9 Mar 2016, 
+                <a href="https://www.youtube.com/watch?v=pR5VJo5ifdE" target="_blank">www.youtube.com/watch<wbr>?v=pR5VJo5ifdE</a>. Accessed 22 Jan 2020. <br> <br>
+            </dd>
+        </dl>
     </div>
     
 
-    <!-- Popular Space News Sites -->
+    <!-- Popdlar Space News Sites -->
     <div>
         <h2 id="news">News Articles</h2>
-        <ul>
-            <li>
+        <dl>
+            <dd>
                 “Astronomy Magazine - Interactive Star Charts, Planets, Meteors, Comets, Telescopes.” <i>Astronomy.com</i>, 2020, 
                 <a href="https://www.astronomy.com" target="_blank">www.astronomy.com</a>. <br> <br>
-            </li>
-            <li>
+            </dd>
+            <dd>
                 “Science News | Science Mission Directorate.” <i>Nasa.gov</i>, 2019, 
-                <a href="https://science.nasa.gov/science-news/" target="_blank">science.nasa.gov/science-news/</a>. <br> <br>
-            </li>
-            <li>
+                <a href="https://science.nasa.gov/science-news/" target="_blank">science.nasa.gov<wbr>/science-news/</a>. <br> <br>
+            </dd>
+            <dd>
                 “Space News, Articles and Features | New Scientist.” <i>Newscientist.com</i>, 2019, 
-                <a href="https://www.newscientist.com/subject/space/" target="_blank">www.newscientist.com/subject/space/</a>. <br> <br>
-            </li>
-            <li>“Home.” Planetary.org, 2020, <a href="https://www.planetary.org" target="_blank">www.planetary.org</a>. <br> <br></li>
-        </ul>
+                <a href="https://www.newscientist.com/subject/space/" target="_blank">www.newscientist.com<wbr>/subject/space/</a>. <br> <br>
+            </dd>
+            <dd>
+                “Home.” Planetary.org, 2020, <a href="https://www.planetary.org" target="_blank">www.planetary.org</a>. <br> <br>
+            </dd>
+        </dl>
     </div>
 
 
     <!-- More stuffs NOT included in our websites -->
     <div>
         <h2 id="space">Find Even More About Space!</h2>
-        <ul>
-            <li><strong>NASA</strong>
-                <ul>
-                    <li>
-                        NASA. “Dark Matter & Dark Energy - NASA Science.” <i>Science.nasa.gov</i>, 2024, 
-                        <a href="https://science.nasa.gov/universe/dark-matter-dark-energy/" target="_blank">science.nasa.gov/universe/dark-matter-dark-energy/</a>. <br> <br>
-                    </li>
-                </ul>
-            </li>
-            <li><strong>More Videos</strong>
-                <ul>
-                    <li>
-                        Epic Spaceman. “I Poured All the Galaxies in the Universe into a Pool.” <i>YouTube</i>, 24 Oct. 2024, 
-                        <a href="https://www.youtube.com/watch?v=7J_Ugp8ZB4E" target="_blank">www.youtube.com/watch?v=7J_Ugp8ZB4E</a>. <br> <br>
-                    </li>
-                    <li>Kurzgesagt – In a Nutshell. “Could Solar Storms Destroy Civilization? Solar Flares & Coronal Mass Ejections.” <i>YouTube</i>, 7 June 2020, 
-                        <a href="https://www.youtube.com/watch?v=oHHSSJDJ4oo&list=PLlKADClY7ZgZ9MdvYB7jurMeD8hUdI2Ja" target="_blank">
-                            www.youtube.com/watch?v=oHHSSJDJ4oo&list=PLlKADClY7ZgZ9MdvYB7jurMeD8hUdI2Ja
-                        </a>. Accessed 3 Mar. 2025. <br> <br>
-                    </li>
-                    <li>
-                        Kurzgesagt - In a Nutshell. “The Largest Star in the Universe – Size Comparison.” <i>YouTube</i>, 22 Sept. 2020, 
-                        <a href="https://www.youtube.com/watch?v=3mnSDifDSxQ" target="_blank">www.youtube.com/watch?v=3mnSDifDSxQ</a>. <br> <br>
-                    </li>
-                    
-                    <li>
-                        Veritasium. “Does Planet 9 Exist?” <i>YouTube</i>, 13 Sept. 2019, 
-                        <a href="https://www.youtube.com/watch?v=pe83T9hISoY&list=PLkahZjV5wKe-bi4kBx7b9rX80g6SMW78H&index=6" target="_blank">
-                            www.youtube.com/watch?v=pe83T9hISoY&list=PLkahZjV5wKe-bi4kBx7b9rX80g6SMW78H&index=6
-                        </a>. Accessed 3 Mar. 2025. <br> <br>
-                    </li>
-                    <li>
-                        Veritasium. “How Did They Actually Take This Picture? (Very Long Baseline Interferometry).” <i>YouTube</i>, 12 May 2022, 
-                        <a href="https://www.youtube.com/watch?v=Q1bSDnuIPbo&list=PLkahZjV5wKe-bi4kBx7b9rX80g6SMW78H&index=4" target="_blank">
-                            www.youtube.com/watch?v=Q1bSDnuIPbo&list=PLkahZjV5wKe-bi4kBx7b9rX80g6SMW78H&index=4
-                        </a>. Accessed 3 Mar. 2025. <br> <br>
-                    </li>
-                    <li>
-                        Veritasium. “How Gravity Actually Works.” <i>YouTube</i>, 9 Oct. 2020, 
-                        <a href="https://www.youtube.com/watch?v=XRr1kaXKBsU&list=PLkahZjV5wKe-bi4kBx7b9rX80g6SMW78H" target="_blank">
-                            www.youtube.com/watch?v=XRr1kaXKBsU&list=PLkahZjV5wKe-bi4kBx7b9rX80g6SMW78H
-                        </a>. Accessed 3 Mar. 2025. <br> <br>
-                    </li>
-                </ul>
-            </li>
+        <dl>
+            <dt><strong>NASA</strong></dt>
+            <dd>
+                NASA. “Dark Matter & Dark Energy - NASA Science.” <i>Science.nasa.gov</i>, 2024, 
+                <a href="https://science.nasa.gov/universe/dark-matter-dark-energy/" target="_blank">science.nasa.gov<wbr>/universe/dark-<wbr>matter-dark-energy/</a>. <br> <br>
+            </dd>
+            <dt><strong>More Videos</strong></dt>
+            <dd>
+                Epic Spaceman. “I Poured All the Galaxies in the Universe into a Pool.” <i>YouTube</i>, 24 Oct 2024, 
+                <a href="https://www.youtube.com/watch?v=7J_Ugp8ZB4E" target="_blank">www.youtube.com/watch<wbr>?v=7J_Ugp8ZB4E</a>. <br> <br>
+            </dd>
+            <dd>Kurzgesagt – In a Nutshell. “Codld Solar Storms Destroy Civilization? Solar Flares & Coronal Mass Ejections.” <i>YouTube</i>, 7 June 2020, 
+                <a href="https://www.youtube.com/watch?v=oHHSSJDJ4oo&list=PLlKADClY7ZgZ9MdvYB7jurMeD8hUdI2Ja" target="_blank">
+                    www.youtube.com/watch<wbr>?v=oHHSSJDJ4oo<wbr>&list=PLlKADClY7ZgZ<wbr>9MdvYB7jurMeD8hUdI2Ja
+                </a>. Accessed 3 Mar. 2025. <br> <br>
+            </dd>
+            <dd>
+                Kurzgesagt - In a Nutshell. “The Largest Star in the Universe – Size Comparison.” <i>YouTube</i>, 22 Sept 2020, 
+                <a href="https://www.youtube.com/watch?v=3mnSDifDSxQ" target="_blank">www.youtube.com/watch<wbr>?v=3mnSDifDSxQ</a>. <br> <br>
+            </dd>
             
-        </ul>
+            <dd>
+                Veritasium. “Does Planet 9 Exist?” <i>YouTube</i>, 13 Sept. 2019, 
+                <a href="https://www.youtube.com/watch?v=pe83T9hISoY&list=PLkahZjV5wKe-bi4kBx7b9rX80g6SMW78H&index=6" target="_blank">
+                    www.youtube.com/watch<wbr>?v=pe83T9hISoY&list<wbr>=PLkahZjV5wKe-bi4kBx7b<wbr>9rX80g6SMW78H&index=6
+                </a>. Accessed 3 Mar. 2025. <br> <br>
+            </dd>
+            <dd>
+                Veritasium. “How Did They Actually Take This Picture? (Very Long Baseline Interferometry).” <i>YouTube</i>, 12 May 2022, 
+                <a href="https://www.youtube.com/watch?v=Q1bSDnuIPbo&list=PLkahZjV5wKe-bi4kBx7b9rX80g6SMW78H&index=4" target="_blank">
+                    www.youtube.com/watch<wbr>?v=Q1bSDnuIPbo&list<wbr>=PLkahZjV5wKe-bi4kBx7<wbr>b9rX80g6SMW78H&index=4
+                </a>. Accessed 3 Mar. 2025. <br> <br>
+            </dd>
+            <dd>
+                Veritasium. “How Gravity Actually Works.” <i>YouTube</i>, 9 Oct 2020, 
+                <a href="https://www.youtube.com/watch?v=XRr1kaXKBsU&list=PLkahZjV5wKe-bi4kBx7b9rX80g6SMW78H" target="_blank">
+                    www.youtube.com/watch<wbr>?v=XRr1kaXKBsU&list=<wbr>PLkahZjV5wKe-bi4k<wbr>Bx7b9rX80g6SMW78H
+                </a>. Accessed 3 Mar 2025. <br> <br>
+            </dd>            
+        </dl>
     </div>
     
     <nav class="bottom">

@@ -29,7 +29,7 @@ header {
     border-radius: 0 0 10px 10px;
     color: white;
     font-size: 200%;
-    padding: 5px;
+    padding: 5px 0;
     width: 100%;
 }
 
@@ -107,10 +107,8 @@ div.specialText {
 /* Articles Related Elements*/
 article {
     border: 4px solid rgb(0, 49, 81);
-    margin-top: 7px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 2em;
+    margin: 7px 1rem;
+    padding: 2rem;
     border-radius: 10px;
     text-align: center;
     background-image: url(https://papers.co/wallpaper/papers.co-ng79-star-sky-night-space-dark-blue-36-3840x2400-4k-wallpaper.jpg)
@@ -281,5 +279,18 @@ footer {
     footer,
     .Contact > div > a {
         flex-direction: column;
+    }
+
+    .specialText p {
+        margin-left: 0;
+    }
+
+    .Solar {
+        flex: 1;
+    }
+
+    article {
+        margin: 7px 0;
+        padding: 1rem;
     }
 }
