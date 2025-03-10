@@ -243,6 +243,8 @@ footer {
 .Footer a {
     color: rgb(231, 231, 231);
     transition: .5s;
+    display: flex; 
+    align-items: center;
 }
 
 .Footer a:hover {
@@ -253,11 +255,23 @@ footer {
     color: darkgoldenrod;
 }
 
+.Footer img {
+    width: 60px;
+    transition: .3s;
+    margin-left: 1rem;
+    margin-right: 8px;
+}
+
+.Footer img:hover {
+    width: 70px;
+}
+
 /* Mobile phones */
 @media only screen and (max-width: 650px) {
 
     .specialText,
-    footer {
+    footer,
+    .Contact > div > a {
         flex-direction: column;
     }
 }
