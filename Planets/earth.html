@@ -9,7 +9,28 @@
     <!--Links to stylesheet and icon-->
     <link rel="icon" type="images/icon" href="../images/Earth.png">
     <link rel="stylesheet" href="../general.css">
-    <link rel="stylesheet" href="earth.css">
+    <link rel="stylesheet" href="../planets.css">
+
+    <!-- Webpage styling -->
+    <style>
+        /* Colour theme */
+        body > div {border: 4px solid rgb(0, 111, 6);}
+        header {background-color: rgba(3, 151, 205, 0.7);}
+        h2 {color: rgb(31, 165, 249);} 
+        .EarthNight {
+            color: lightgoldenrodyellow;
+            background: rgb(0, 9, 57) url(../images/EarthNight.png) top no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .EarthNight div {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>    
 </head>
 <body>
     <!--Website Main Title-->
@@ -26,27 +47,38 @@
             the only planet in the Solar System with liquid water on its surface, which is essential for life as 
             we know it.
         </p>
+        <figure class="gallery">
+            <img src="https://www.worldatlas.com/r/w1200/upload/67/bc/2a/shutterstock-126712838.jpg" alt="Marine Ecosystem">
+            <img src="https://spiritbear.com/wp-content/uploads/2019/08/image-72-oiam-1.jpg" alt="Forest Ecosystem">
+            <img src="https://www.antarctica.gov.au/site/assets/files/38665/phytoplankton.1600x0.jpg" alt="Microscopic Ecosystem">
+        </figure>
     </div>
     
     <div>
         <h2>Key Facts</h2>
-        <ul>
-            <li><strong>Distance from Sun:</strong> 149.6 million km</li>
-            <li><strong>Orbital Period:</strong> 365.24 days</li>
-            <li><strong>Rotation Period:</strong> 24 hours</li>
-            <li><strong>Diameter:</strong> 12,742 km</li>
-            <li><strong>Moons:</strong> 1 (The Moon)</li>
-        </ul>
+        <div class="flex">
+            <ul>
+                <li><strong>Distance from Sun:</strong> ~149.6 million km</li>
+                <li><strong>Orbital Period:</strong> ~365.24 days</li>
+                <li><strong>Rotation Period:</strong> ~24 hours</li>
+                <li><strong>Diameter:</strong> ~12,742 km</li>
+                <li><strong>Moons:</strong> 1 (The Moon)</li>
+            </ul>
+            <img src="https://science8sc.weebly.com/uploads/1/3/2/7/132773018/earth-revolution-gif_orig.gif" alt="Earth's Orbit" style="flex: 2; width: 100%">
+        </div>
     </div>
     
     <div>
         <h2>Fun Facts</h2>
-        <ul>
-            <li>Earth is the only planet not named after a Roman or Greek god.</li>
-            <li>70% of Earth's surface is covered in water.</li>
-            <li>Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and trace amounts of other gases.</li>
-            <li>The highest point on Earth is Mount Everest, which is 8,848 meters (29,029 feet) above sea level.</li>
-        </ul>
+        <div class="flex">
+            <img src="https://assets.weforum.org/editor/Y_PY-SuflS7dEIMvw9OGsKwXzZhY9Z4wX55JDyO4zPo.jpeg" alt="Earth's Altitude" style="width: 50%;">
+            <ul>
+                <li>Earth is the only planet not named after a Roman or Greek god.</li>
+                <li>70% of Earth's surface is covered in water.</li>
+                <li>Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and trace amounts of other gases.</li>
+                <li>The highest point on Earth is Mount Everest, which is 8,848 meters (29,029 feet) above sea level.</li>
+            </ul>
+        </div>
     </div>
     
     <div>
@@ -61,6 +93,33 @@
             style="width: 50%; height: auto; text-align: center;">
         <p style="margin-top: 0; margin-bottom: 0; font-size: 75%; text-align: center;"> 
             &copy; Map by Eleanor Lutz 2022
+        </p>
+    </div>
+
+    <div class="EarthNight">
+        <h2 style="color: lightgoldenrodyellow;" >Earth at Night!</h2>
+        <p style="margin-bottom: 50vh;">
+            <span>
+                Isn't it look so beautiful? This map shows the Earth at night, with the lights of cities and towns visible even
+                from space! It's amazing to see how much of the planet is lit up, and how difference regions have different levels
+                of light.
+            </span>
+        </p>
+        <p>
+            <span>
+                There are a lot of fascinating and absurd stories to be told from this map, don't you think? Check this video out! <br>
+            </span>
+        </p>
+        <iframe 
+            src="https://www.youtube.com/embed/ZYGd-llxHJE" 
+            title="How one NASA image tells dozens of stories"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            Something Went Wrong 😞 Sorry!
+        </iframe>
+        <p style="margin-top: 0; font-size: 75%; text-align: center;">
+            &copy; Video by neo 2019
         </p>
     </div>
 
@@ -80,7 +139,9 @@
     </div>
     
     <nav class="bottom">
-        <h3>To Other Planets!</h3> 
+        <a class="mainLink" href="../index.html">
+            <h1>To Other Planets!</h1>
+        </a>
         <ul class="navigate">
             <li><a href="/Planets/mercury.html"> Mercury</a> |</li>
             <li><a href="/Planets/venus.html"> Venus</a> |</li>
@@ -92,8 +153,43 @@
             <li><a href="/Planets/neptune.html">Neptune</a></li>
         </ul>
     </nav>
-    <a class="mainLink" href="../index.html">
-        <h1>Back to Main</h1>
-    </a>
+    
+    <!--Footer-->
+    <footer>
+        <div class="Solar Footer">
+            <p>
+                <span style="font-size: 150%;">
+                    <strong>Solar System Planets</strong>
+                </span> <br>
+                are truly majestic and fascinating, aren't they? There are still so many unknown things waiting
+                to be explored and discovered ahead of you! 🚀
+            </p>
+        </div>
+
+        <div class="Source Footer">Explore Sources!
+            <ul>
+                <li><a href="/sources.html#websites">Websites</a></li>
+                <li><a href="/sources.html#videos">Videos</a></li>
+                <li><a href ="/sources.html#news">News Articles</a></li>
+            </ul>
+        </div>
+        <div class="Contact Footer">Contact Us
+            <div style="display: flex; align-items: center; margin: 0px; padding: 10px;">
+                <a href="https://www.instagram.com">
+                    <img src="/images/Instagram.png" alt="Instagram Logo">
+                    Instagram
+                </a>
+                <a href="https://discord.com">
+                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source" alt="Discord Logo">
+                    Discord
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Facebook Logo">
+                    Facebook
+               </a>
+
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -9,7 +9,30 @@
     <!--Links to stylesheet and icon-->
     <link rel="icon" type="images/icon" href="../images/Venus.png">
     <link rel="stylesheet" href="../general.css">
-    <link rel="stylesheet" href="venus.css">
+    <link rel="stylesheet" href="../planets.css">
+
+    <!-- Webpage styling -->
+    <style>
+        /* Colour theme */
+        body > div {border: 4px solid rgba(180, 117, 0, 0.714);}
+        header {background-color: rgba(180, 117, 0, 0.7);}
+        h2 {color: rgb(196, 160, 0);}
+        p > a:hover {color: rgb(0, 141, 141); font-size: 110%;}
+
+        /* Specific Venus Images */
+        .atmosphere, .noAtmosphere {
+            width: 80%;
+            height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: auto;
+            border: 2px solid rgb(180, 117, 0);
+            text-align: center;
+        }
+        .atmosphere {background-image: url(../images/VenusAtmosphere.png);}
+        .noAtmosphere {background-image: url(../images/VenusNoAtmosphere.png);}
+    </style>
 </head>
 <body>
     <!--Website Main Title-->
@@ -26,40 +49,78 @@
             making it the hottest planet in the Solar System. Venus rotates in the opposite direction to most planets in the 
             Solar System, a phenomenon known as retrograde rotation.
         </p>
+        <img src="https://sm.mashable.com/t/mashable_in/photo/default/shutterstock-163793456_mh4f.1248.jpg" alt="Earth and Venus" style="width: 100%; max-width: 700px;">
     </div>
     
     <div>
         <h2>Key Facts</h2>
-        <ul>
+        <div class="flex" style="margin-left: auto; margin-right: auto; max-width: fit-content;">
+            <img src="https://www.cias.space/assets/images/solarsystemgif.gif" alt="Rocky Planets' Orbits" style="width: 100%; max-width: 600px; flex: 1;">
+            <ul>
             <li><strong>Distance from Sun:</strong> ~108.2 million km </li>
             <li><strong>Orbital Period:</strong> 225 Earth days</li>
             <li><strong>Rotation Period:</strong> 243 Earth days</li>
             <li><strong>Diameter:</strong> 12,104 km</li>
             <li><strong>Moons:</strong> 0 (It's lonely!)</li>
-        </ul>
+            </ul>
+        </div>
     </div>
     
     <div>
         <h2>Fun Facts</h2>
-        <ul>
-            <li>Venus is the hottest planet in the Solar System, with surface temperatures reaching up to 471 °C (880 °F).</li>
-            <li>Venus has a thick atmosphere composed mainly of carbon dioxide, with clouds of sulfur</li>
-            <li>Venus rotates in the opposite direction to most planets in the Solar System, a phenomenon known as <b>retrograde rotation</b>.</li>
-            <li>Venus is often called Earth's "sister planet" due to their similar size and composition.</li>
-        </ul>
+        <div class="flex">
+            <ul>
+                <li>Venus is the hottest planet in the Solar System, with surface temperatures reaching up to 471 °C (880 °F).</li>
+                <li>Venus has a thick atmosphere composed mainly of carbon dioxide, with clouds of sulfur</li>
+                <li>Venus rotates in the opposite direction to most planets in the Solar System, a phenomenon known as <b>retrograde rotation</b>.</li>
+                <li>Venus is often called Earth's "sister planet" due to their similar size and composition.</li>
+            </ul>
+            <img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41598-018-38117-x/MediaObjects/41598_2018_38117_Fig1_HTML.png" 
+            alt="Venus Heat Map" style="width: 100%; max-width: 600px;">
+    
+        </div>
     </div>
     
     <div>
+        <h2>Venus Orbit</h2>
+            <p style="margin: 1rem;">
+                Almost all planets in the Solar System rotate counterclockwise on their axes and orbit the Sun in the same direction. 
+                Venus also follows a counterclockwise orbit but rotates clockwise on its axis. One theory for this unusual rotation 
+                suggests that a massive collision early in its history caused it to tilt and reverse its spin. The only other planet 
+                with a clockwise rotation is <a href="/Planets/uranus.html"><b>Uranus</b></a>, which is tilted almost completely on its side. Interesting, huh?
+            </p>
+            <img src="https://www.rmg.co.uk/sites/default/files/styles/max_2600x2600/public/Venus%20Phase%20Evolution%20%C2%A9%20Roger%20Hutchinson%20Winner.jpg?itok=bWKe-AuO" 
+            alt="Venus Phases" style="width: 100%; max-width: 700px;">    
+    </div>
+
+    <div>
         <h2>Venus Surfaces</h2>
-        <p>Did you know that since Venus is covered in a dense layer of carbon dioxide and sulfur clouds - so much so that it is 
+        <p>
+            Did you know that since Venus is covered in a dense layer of carbon dioxide and sulfur clouds - so much so that it is 
             reflexive to visible light, making it the brightest object in the sky after the Sun and the Moon?
             The actual Venus surface is rocky, mountainous, and orange due to the presence of iron oxide.
         </p>
         <h2>Venus With & Without the Atmosphere</h2>
-        <div class="atmosphere">
-        </div>
-        <div class="noAtmosphere">
-        </div>
+        <div class="atmosphere"></div>
+        <div class="noAtmosphere"></div>
+    </div>
+
+    <div style="text-align: center;">
+        <h2>From A Planet with Water To the Hottest!</h2>
+        <p>
+            Based on several observations on Venus, scientists noticed some unique characteristics that could bear the resemblance of life! 
+            There is a theory that Venus <em>may</em> have contained shallow ocean water on its surface hundreds of millions of years ago! Odd isn't it?
+        </p>
+        <!-- Provided by Youtube Embedded Sharing -->
+        <iframe style="width: 80%; min-height: 30vh;"
+        src="https://www.youtube.com/embed/BvXa1n9fjow" 
+        title="Venus 101 | National Geographic"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>Something Went Wrong 😞 Sorry!</iframe>
+        <p style="margin-top: 0; font-size: 75%;">
+            &copy; Video by National Geographic 2018
+        </p>
     </div>
 
     <div>
@@ -68,11 +129,18 @@
             <img src="../images/Venus.png" alt="Happy Venus Art">
             <img src="https://www.thoughtco.com/thmb/zx71j6FP0qwIkZCweRriG4tHaww=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1024px-Venus_globe-5a88ae823de423003738f750.jpg" alt="Venus Seen From Telescope">
             <img src="../images/Venus.gif" alt="Venus Spinning Art">
+            <img src="https://nssdc.gsfc.nasa.gov/planetary/image/venusglobe.gif" alt="Colored Venus Topology">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/0*8qrZOc7nRCew_1rW" alt="Venus Surface" style="flex: 2">
         </section>
+        <p style="text-align: right; color: rgb(205, 128, 3); font-size: 75%; margin-bottom: 0; margin-top: 0;">
+            &uArr; Look! It's Venus surface from a spacecraft!
+        </p>
     </div>
     
     <nav class="bottom">
-        <h3>To Other Planets!</h3>
+        <a class="mainLink" href="../index.html">
+            <h1>To Other Planets!</h1>
+        </a>
         <ul class="navigate">
             <li><a href="/Planets/mercury.html"> Mercury</a> |</li>
             <li>&nbsp;Venus&nbsp;|</li>
@@ -84,8 +152,42 @@
             <li><a href="/Planets/neptune.html">Neptune</a></li>
         </ul>
     </nav>
-    <a class="mainLink" href="../index.html">
-        <h1>Back to Main</h1>
-    </a>
+
+    <!--Footer-->
+    <footer>
+        <div class="Solar Footer">
+            <p>
+                <span style="font-size: 150%;">
+                    <strong>Solar System Planets</strong>
+                </span> <br>
+                are truly majestic and fascinating, aren't they? There are still so many unknown things waiting
+                to be explored and discovered ahead of you! 🚀
+            </p>
+        </div>
+
+        <div class="Source Footer">Explore Sources!
+            <ul>
+                <li><a href="/sources.html#websites">Websites</a></li>
+                <li><a href="/sources.html#videos">Videos</a></li>
+                <li><a href ="/sources.html#news">News Articles</a></li>
+            </ul>
+        </div>
+        <div class="Contact Footer">Contact Us
+            <div style="display: flex; align-items: center; margin: 0px; padding: 10px;">
+                <a href="https://www.instagram.com">
+                    <img src="/images/Instagram.png" alt="Instagram Logo">
+                    Instagram
+                </a>
+                <a href="https://discord.com">
+                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source" alt="Discord Logo">
+                    Discord
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Facebook Logo">
+                    Facebook
+               </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

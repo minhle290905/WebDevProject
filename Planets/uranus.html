@@ -1,81 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-body {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-div {
-    border: 4px solid rgb(0, 111, 111);
-}
-
-/* Headings & Headers*/
-header {
-    color: black;
-    background-color: lightblue;
-    text-align: center;
-}
-h2 {
-    color: black;
-    font-size: 20px;
-    text-align: center;
-}
-
-h3 {
-    color: black;
-    font-size: 18px;
-    text-align: center;
-}
-
-p, ul {
-    color: rgb(244,187,68);
-}
-
-/* Images */
-img {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.gallery, img {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    flex: 1;
-    align-items: center;
-    margin: auto;
-    padding: 5px;
-    width: 33%;
-    border-radius: 10px;
-}
-
-/* Links */
-a {
-    color: black;
-    text-decoration: underline;
-}
-
-/* Mobile phones */
-@media only screen and (max-width: 650px) {
-    div {
-        padding: 0.5em;
-    }
-    .gallery img {
-      width: 100%;
-      flex-direction: column;
-    }
-}
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uranus</title>
+
+    <!--Links to stylesheet and icon-->
+    <link rel="icon" type="images/icon" href="../images/Uranus.png">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="../planets.css">
+
+    <!-- Webpage styling -->
+    <style>
+        /* Colour theme */
+        body > div {border: 4px solid rgb(0, 111, 111);}
+        header {background-color: rgba(173, 216, 230, 0.7);}
+        h2 {color: lightseagreen;} 
+    </style>
 </head>
 <body>
     <!--Website Main Title-->
@@ -138,20 +79,57 @@ a {
     </div>
     
     <nav class="bottom">
-        <h3>To Other Planets!</h3> 
+        <a class="mainLink" href="../index.html">
+            <h1>To Other Planets!</h1>
+        </a>
         <ul class="navigate">
-            <li><a href="/Planets/mercury.html"> <h style="color:rgb(211,211,211)">Mercury</h></a> |</li>
-            <li><a href="/Planets/venus.html"> <h style="color:rgb(255,174,66)">Venus</h></a> |</li>
-            <li><a href="/Planets/earth.html"><h style="color:green">Earth</h></a> |</li>
-            <li><a href="/Planets/mars.html"><h style="color:rgb(255,69,0)">Mars</h></a> |</li>
-            <li><a href="/Planets/jupiter.html"><h style="color:rgb(177,96,2)">Jupiter</h></a> |</li>
-            <li><a href="/Planets/saturn.html"><h style="color:rgb(196,164,132)">Saturn</h></a> |</li>
-            <li>&nbsp;Uranus&nbsp;</li>
-            <li><a href="/Planets/neptune.html"><h style="color:blue">Neptune</h></a> |</li>
+            <li><a href="/Planets/mercury.html"> Mercury</a> |</li>
+            <li><a href="/Planets/venus.html"> Venus</a> |</li>
+            <li><a href="/Planets/earth.html">Earth</a> |</li>
+            <li><a href="/Planets/mars.html">Mars</a> |</li>
+            <li><a href="/Planets/jupiter.html">Jupiter</a> |</li>
+            <li><a href="/Planets/saturn.html">Saturn</a> |</li>
+            <li>&nbsp;Uranus&nbsp;|</li>
+            <li><a href="/Planets/neptune.html">Neptune</a></li>
         </ul>
     </nav>
-    <a class="mainLink" href="../index.html">
-        <h1 style="color:white;">Back to Main</h1>
-    </a>
+
+    <!--Footer-->
+    <footer>
+        <div class="Solar Footer">
+            <p>
+                <span style="font-size: 150%;">
+                    <strong>Solar System Planets</strong>
+                </span> <br>
+                are truly majestic and fascinating, aren't they? There are still so many unknown things waiting
+                to be explored and discovered ahead of you! 🚀
+            </p>
+        </div>
+
+        <div class="Source Footer">Explore Sources!
+            <ul>
+                <li><a href="/sources.html#websites">Websites</a></li>
+                <li><a href="/sources.html#videos">Videos</a></li>
+                <li><a href ="/sources.html#news">News Articles</a></li>
+            </ul>
+        </div>
+        <div class="Contact Footer">Contact Us
+            <div style="display: flex; align-items: center; margin: 0px; padding: 10px;">
+                <a href="https://www.instagram.com">
+                    <img src="/images/Instagram.png" alt="Instagram Logo">
+                    Instagram
+                </a>
+                <a href="https://discord.com">
+                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source" alt="Discord Logo">
+                    Discord
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Facebook Logo">
+                    Facebook
+               </a>
+
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

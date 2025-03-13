@@ -1,32 +1,50 @@
 /* Jason's Work */
 
-* { /* Added border box for easier CSS layout */
+* {
+    /* Added border box for easier CSS layout */
     box-sizing: border-box;
-}
-/* Body Elements */
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
-body, div, article {
-    background-repeat: no-repeat; 
-    background-attachment:fixed; 
+/* Body Elements */
+body {
+    margin: 0;
+    width: fit-content;
+    background: #333333 url(/images/NightSky.png);
+}
+
+body,
+div,
+article,
+footer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
-
 
 /* Headings/Headers Elements */
 header {
     background-color: #333333;
+    border-radius: 0 0 10px 10px;
     color: white;
     font-size: 200%;
-    padding: 5px;
+    padding: 5px 0;
     width: 100%;
 }
 
-header, h1 , h3{
+header,
+h1,
+h3 {
     text-align: center;
+}
+
+#index {
+    /* for Header too */
+    background: darkcyan url(https://png.pngtree.com/thumb_back/fh260/background/20240430/pngtree-orange-light-background-image_15722879.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 400%;
 }
 
 h3 {
@@ -35,15 +53,14 @@ h3 {
 }
 
 /* Mainly Div & Nav Elements */
-div, nav {
-    margin-top: 7px;
-    margin-left: 20px;
-    margin-right: 20px;
+div,
+nav {
+    margin: 1rem 1rem;
     padding: 2em;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
-div {
+.right, .left, body > div {
     background-color: rgba(255, 250, 245, 0.96);
     border: 4px solid rgb(0, 49, 81);
 }
@@ -52,20 +69,15 @@ div.right {
     background-position: right;
 }
 
-div.left{
+div.left {
     text-align: right;
-}
-nav.bottom {
-    border: 2px double #333333;
-    background-color: rgb(255, 190, 92);
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* For floating images & text boxes */
-.specialText, .specialText p, .specialText img {
-    border-radius: 10px; 
+.specialText,
+.specialText p,
+.specialText img {
+    border-radius: 10px;
     margin: auto;
 }
 
@@ -74,12 +86,12 @@ div.specialText {
     background-color: unset;
     border: unset;
     display: flex;
-    padding: 5em;
+    padding: 2em;
 }
 
 .specialText img {
     flex: 1;
-    min-width: 200px;
+    min-width: 300px;
     width: 50%;
     height: 50%;
 }
@@ -89,21 +101,21 @@ div.specialText {
     padding: 1em;
     color: rgb(255, 190, 92);
     background-color: rgba(0, 0, 0, 0.5);
-    margin-left: 10px;
+    margin-left: 1em;
 }
+
 /* Articles Related Elements*/
 article {
     border: 4px solid rgb(0, 49, 81);
-    margin-top: 7px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 2em;
-    border-radius: 10px; 
+    margin: 7px 1rem;
+    padding: 2rem;
+    border-radius: 10px;
     text-align: center;
     background-image: url(https://papers.co/wallpaper/papers.co-ng79-star-sky-night-space-dark-blue-36-3840x2400-4k-wallpaper.jpg)
 }
 
-article h2, article p {
+article h2,
+article p {
     color: rgb(249, 218, 142);
 }
 
@@ -116,40 +128,73 @@ iframe {
     border: 5px solid darkgoldenrod;
     border-radius: 10px;
     margin-bottom: 0;
+    min-height: 50vh;
+    height: 30vw;
+    min-width: 80vw;
 }
 
 /* Links Elements */
-a {
-    color: white;       
+.planets {
+    color: white;
     text-decoration: none;
 }
-a:hover {
-    color:orangered;
+
+.planets h2,
+.planets p {
+    transition: .3s;
+    text-decoration: none;
+
+}
+
+.planets:hover h2,
+.planets:hover p {
+    color: aqua;
+}
+
+.planets:active h2,
+.planets:active p {
+    color: darkblue;
+}
+
+.planets:hover h2 {font-size: 160%;}
+.planets:hover p {font-size: 110%;}
+
+nav.bottom {
+    border: 4px double #e1a900;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20240430/pngtree-orange-light-background-image_15722879.jpg);
+    background-position: bottom;
+    background-size: 200%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation link */
+.navigate a {
+    color: darkblue;
     transition: .3s;
 }
 
-a:active {
+.navigate a:hover {
+    color: white;
+    font-size: 110%;
+}
+
+.navigate a:active {
     color: purple;
 }
 
+/* "To Other Planets" Link */
 .mainLink {
-    color: white;    
+    color: white;
 }
 
 .mainLink:hover {
-    color: cyan;    
+    color: cyan;
+    font-size: 110%;
 }
 
 .mainLink:active {
-    color: darkblue;    
-}
-
-.planets:hover h2, .planets:hover p {
-    color:aqua;
-    transition: .3s;
-}
-
-.planets:active h2, .planets:active p {
     color: darkblue;
 }
 
@@ -166,15 +211,92 @@ a:active {
 .navigate li a {
     text-align: center;
     padding-left: 3px;
+    transition: .3s;
 }
 
-#welcomeGreeting{
-    text-align: center;
+/* Footer */
+footer {
+    color: rgb(200, 200, 200);
+    display: flex;
+    background: rgb(58, 58, 58) url(https://static.scientificamerican.com/dam/m/57fc603972fdb/original/GettyImages-2166462891_WEB.jpg?m=1732209326.208&crop=4%3A3%2Csmart&w=1200) top;
+    border-radius: 10px 10px 0 0;
+    border: 4px solid gray;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.Footer {
+    all: unset;
+    color: rgb(200, 200, 200);
+    text-align: left;
+    float: left;
+    padding: 2rem;
+    transition: 0.5s;
+}
+
+
+.Footer:hover {
+    color: white;
+    font-size: 110%;
+    transition: 0.5s;
+}
+
+.Solar {
+    flex: 1.5;
+}
+
+.Sources,
+.Contact {
+    flex: 1;
+}
+
+/* Footer Links */
+.Footer a {
+    color: rgb(231, 231, 231);
+    transition: .5s;
+    display: flex; 
+    align-items: center;
+}
+
+.Footer a:hover {
+    color: rgb(255, 233, 154);
+}
+
+.Footer a:active {
+    color: darkgoldenrod;
+}
+
+.Footer img {
+    width: 60px;
+    transition: .3s;
+    margin-left: 1rem;
+    margin-right: 8px;
+    border-radius: 10px;
+}
+
+.Footer img:hover {
+    width: 70px;
 }
 
 /* Mobile phones */
 @media only screen and (max-width: 650px) {
-    .specialText {
-      flex-direction: column;
+
+    .specialText,
+    footer,
+    .Contact > div > a {
+        flex-direction: column;
+    }
+
+    .specialText p {
+        margin-left: 0;
+    }
+
+    .Solar {
+        flex: 1;
+    }
+
+    article {
+        margin: 7px 0;
+        padding: 1rem;
     }
 }
